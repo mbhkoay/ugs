@@ -14,17 +14,25 @@ LABEL maintainer="mbhkoay"
 RUN \
  echo "**** install build deps ****" && \
  apt-get update && \
- apt-get install -qy --no-install-recommends
-#	whatever \
-
-#RUN \
-# echo "**** install node modules ****" && \
-# cd /gclient && \
-# npm install 
+ apt-get install -y \
+    wget && \
+ wget https://www.goodsync.com/download/goodsync-linux-x86_64-release.run && \
+ chmod +x goodsync-linux-x86_64-release.run && \
+ /goodsync-linux-x86_64-release.run && \
+ && \
+ && \
+ y && \
+#pass goodsync connect user id
+#pass goodsync connect password
+ y && \
+ y && \
+ && \
+ && \
+ && \
 
 # add local files
 #COPY /root /
 
 # ports and volumes
-EXPOSE 2346 2346
+EXPOSE 11000 11000
 VOLUME /config
