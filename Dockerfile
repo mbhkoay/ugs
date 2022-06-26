@@ -12,8 +12,8 @@ LABEL maintainer="mbhkoay"
 RUN \
  echo "**** install build deps ****" && \
  apt-get update && \
- apt-get install -qy --no-install-recommends \
-	whatever \
+ apt-get install -qy --no-install-recommends
+#	whatever \
 
 #RUN \
 # echo "**** install node modules ****" && \
