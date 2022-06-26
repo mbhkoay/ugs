@@ -20,6 +20,9 @@ RUN \
 # cd /gclient && \
 # npm install 
 
+# add local files
+COPY /root /
+
 # ports and volumes
 EXPOSE 2346 2346
 VOLUME /config
