@@ -21,7 +21,7 @@ RUN \
 # npm install 
 
 # add local files
-COPY /root /
+#COPY /root /
 
 # ports and volumes
 EXPOSE 2346 2346
